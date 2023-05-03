@@ -38,7 +38,7 @@ variable "fruits2" {
       count= 100
     }
 
-    banana ={
+    banana = {
       name = "banana"
       count = 200
     }
