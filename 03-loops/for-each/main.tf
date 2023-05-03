@@ -8,7 +8,6 @@ resource "null_resource" "fruits" {
     //command = "echo   ${length(var.fruits)}"
   }
 
-}
 
 variable "fruits" {
   default = {
