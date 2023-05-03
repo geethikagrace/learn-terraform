@@ -2,10 +2,10 @@
 
 
 resource "null_resource" "fruits" {
- for_each =
+ for_each = var.fruits
 
-    //command = "echo Fruit Name -  ${var.fruits[count.index]}"
-    command = "echo   ${length(var.fruits)}"
+    command = "echo Fruit Name -  ${each.valu}"
+    //command = "echo   ${length(var.fruits)}"
   }
 
 }
