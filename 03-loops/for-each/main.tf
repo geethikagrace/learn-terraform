@@ -4,7 +4,7 @@
 resource "null_resource" "fruits" {
  for_each = var.fruits
 
-    command = "echo Fruit Name -  ${each.valu}"
+    command = "echo Fruit Name -  ${each.key}"
     //command = "echo   ${length(var.fruits)}"
   }
 
